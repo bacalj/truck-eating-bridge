@@ -34,7 +34,8 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/sanity/module'
+    '@nuxtjs/sanity/module',
+    '@nuxtjs/google-fonts'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -49,5 +50,32 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
 
+  },
+
+  generate: {
+    crawler: true,
+    fallback: true
+  },
+
+  tailwindcss: {
+    config: {
+      plugins: [tailwindTypography]
+    }
+  },
+
+  googleFonts: {
+    families: {
+      Roboto: true,
+      Ruda: true,
+      'Architects+Daughter': true
+    }
+  },
+
+  sanity: {
+    "projectId": process.env.SANITY_PROJECT,
+    "dataset": "production",
+    "token": process.env.SANITY_TOKEN,
+    "withCredentials": true
+    //"useCdn": true
   }
 }
