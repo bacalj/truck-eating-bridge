@@ -1,78 +1,34 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        truck-eating-bridge
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+  <div class="index">
+    <div class="grid grid-cols-3 gap-4">
+      <PresentationItem v-for="p in presentations" :presentation="p" :key="p._id" />
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+
+import { groq } from '@nuxtjs/sanity'
+
+export default {
+  data(){
+    return {
+      presentations:[]
+    }
+  },
+
+  async fetch(){
+    const query = groq`*[_type == "presentation" && !(_id in path('drafts.**')) ]`
+    this.presentations = await this.$sanity.fetch(query)
+    console.log(this.presentations)
+  },
+}
+
 </script>
 
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+<style lang="postcss" scoped>
 
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+h2 {
+  @apply text-gray-900 font-bold text-3xl mb-12;
 }
 </style>

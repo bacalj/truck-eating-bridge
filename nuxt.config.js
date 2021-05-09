@@ -76,6 +76,5 @@ export default {
     "dataset": "production",
     "token": process.env.SANITY_TOKEN,
     "withCredentials": true
-    //"useCdn": true
   }
 }
