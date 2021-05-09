@@ -67,7 +67,7 @@ export default {
     families: {
       Roboto: true,
       Ruda: true,
-      'Architects+Daughter': true
+      'Cabin+Sketch': true
     }
   },
 

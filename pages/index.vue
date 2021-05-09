@@ -1,5 +1,8 @@
 <template>
   <div class="index">
+    <div class="flex mb-12 justify-center">
+      <div class="w-1/2">A description goes here...maybe a picture of a truck stuck? Maybe more than that, but probably not too much more I just wrote all this to take up space.</div>
+    </div>
     <div class="grid grid-cols-3 gap-4">
       <PresentationItem v-for="p in presentations" :presentation="p" :key="p._id" />
     </div>
