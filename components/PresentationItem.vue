@@ -1,5 +1,8 @@
 <template>
-  <div class="shadow rounded-lg article-item p-4 bg-white mb-6">
+  <div class="shadow rounded-lg article-item bg-white mb-6">
+    <div class="image-wrap h-56 flex items-center overflow-hidden justify-center">
+        <SanityImage auto="format" :asset-id="presentation.poster.asset._ref" />
+    </div>
     <nuxt-link :to="`presentations/${presentation.slug.current}`">{{ presentation.title }} </nuxt-link>
   </div>
 </template>
@@ -11,3 +14,9 @@ export default {
   }
 }
 </script>
+
+<style lang="postcss" scoped>
+a {
+  font-family: 'Cabin Sketch'
+}
+</style>
