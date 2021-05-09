@@ -23,7 +23,6 @@ export default {
   async fetch(){
     const query = groq`*[_type == "presentation" && !(_id in path('drafts.**')) ]`
     this.presentations = await this.$sanity.fetch(query)
-    console.log(this.presentations)
   },
 }
 

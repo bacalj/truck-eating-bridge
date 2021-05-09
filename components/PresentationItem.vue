@@ -21,4 +21,8 @@ export default {
 a {
   font-family: 'Cabin Sketch'
 }
+
+a:hover {
+  @apply text-indigo-500;
+}
 </style>
