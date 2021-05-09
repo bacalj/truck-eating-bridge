@@ -6,7 +6,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'truck-eating-bridge',
+    title: 'Truck-Eating-Bridge Solutions',
     htmlAttrs: {
       lang: 'en'
     },
