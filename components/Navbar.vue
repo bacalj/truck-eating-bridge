@@ -6,6 +6,7 @@
     <div class="menu-items text-lg flex justify-end">
 
       <div class="flex default-items">
+        <nuxt-link class="flex-initial py-2 px-4" to="/problem">The Problem</nuxt-link>
         <nuxt-link class="flex-initial py-2 px-4" to="/contact">Contact</nuxt-link>
         <nuxt-link class="flex-initial py-2 px-4" to="/about">About</nuxt-link>
       </div>

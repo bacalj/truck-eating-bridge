@@ -3,7 +3,9 @@
     <div class="image-wrap h-56 flex items-center overflow-hidden justify-center">
         <SanityImage auto="format" :asset-id="presentation.poster.asset._ref" />
     </div>
-    <nuxt-link :to="`presentations/${presentation.slug.current}`">{{ presentation.title }} </nuxt-link>
+    <div class="p-4 text-xl">
+      <nuxt-link :to="`presentations/${presentation.slug.current}`">{{ presentation.title }} </nuxt-link>
+    </div>
   </div>
 </template>
 
