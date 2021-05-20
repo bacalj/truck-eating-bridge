@@ -9,6 +9,7 @@
         <nuxt-link class="flex-initial py-2 px-4" to="/problem">The Problem</nuxt-link>
         <nuxt-link class="flex-initial py-2 px-4" to="/contact">Contact</nuxt-link>
         <nuxt-link class="flex-initial py-2 px-4" to="/about">About</nuxt-link>
+        <nuxt-link class="flex-initial py-2 px-4" to="/games">Games</nuxt-link>
       </div>
 
     </div>
