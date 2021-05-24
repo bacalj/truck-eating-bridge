@@ -16,6 +16,8 @@
         And lastly, how can we prevent this? By adding ideas to our website!
       </p>
 
+      <div><img src="https://res.cloudinary.com/jbmtl75/image/upload/v1621880604/arc/Screenshot_of_Google_Chrome_5-24-21_2-21-58_PM_ni7he8.png" alt=""></div>
+
 
 
     </div>
