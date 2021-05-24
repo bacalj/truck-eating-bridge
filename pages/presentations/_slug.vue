@@ -37,3 +37,9 @@ export default {
   }
 }
 </script>
+
+<style lang="postcss" scoped>
+h2 {
+  font-family: 'Cabin Sketch', Verdana, Geneva, Tahoma, sans-serif;
+}
+</style>
