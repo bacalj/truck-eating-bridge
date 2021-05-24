@@ -2,9 +2,15 @@
   <div class="presentation-wrap pb-12">
     <h2 class="py-6 font-medium text-2xl uppercase">{{ presentation.title }}</h2>
     <div class="bg-white rounded-lg shadow deck">
+
       <Deck :itemsrc="presentation.slidesUrl" />
-      <div class="p-12 w-full" style="text-align:center">
-        <iframe src="https://scratch.mit.edu/projects/530038568/embed" allowtransparency="true" width="100%" height="800" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+      <div v-if="presentation.scratchUrl" class="mt-4 p-12 w-full" style="text-align:center">
+        <iframe :src="scratchUrl" allowtransparency="true" width="100%" height="800" frameborder="0" scrolling="no" allowfullscreen></iframe>
+      </div>
+
+      <div v-if="presentation.tinkerCadUrl" class="mt-4 p-12 w-full" style="text-align:center">
+        <iframe :src="tinkerCadUrl" allowtransparency="true" width="100%" height="800" frameborder="0" scrolling="no" allowfullscreen></iframe>
       </div>
 
     </div>
