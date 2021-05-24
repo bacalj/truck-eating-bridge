@@ -6,11 +6,11 @@
       <Deck :itemsrc="presentation.slidesUrl" />
 
       <div v-if="presentation.scratchUrl" class="mt-4 p-12 w-full" style="text-align:center">
-        <iframe :src="scratchUrl" allowtransparency="true" width="100%" height="800" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        <iframe :src="presentation.scratchUrl" allowtransparency="true" width="100%" height="800" frameborder="0" scrolling="no" allowfullscreen></iframe>
       </div>
 
       <div v-if="presentation.tinkerCadUrl" class="mt-4 p-12 w-full" style="text-align:center">
-        <iframe :src="tinkerCadUrl" allowtransparency="true" width="100%" height="800" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        <iframe :src="presentation.tinkerCadUrl" allowtransparency="true" width="100%" height="800" frameborder="0" scrolling="no" allowfullscreen></iframe>
       </div>
 
     </div>
