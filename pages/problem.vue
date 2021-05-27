@@ -10,7 +10,9 @@
         What usually happens is that the trucks come into Northampton to go to Industrial Drive to get to the Coke factory. They’re usually not from the area around or in Northampton, so when the GPS tells them to go through Main Street and though the bridge, they don't know that they're going to crash. So they crash.
 
         There is a way to safely get to Industrial Drive, though. It's through Damon Road, and straight to the destination. Truck drivers don't know this, though. Since most of the drivers aren't from the area near Northampton or even Massachusetts, they don't expect the bridges to be too low. And the route through Main Street is probably the most convenient, more convenient than going all the way around from Damon Road. It's like a trap for trucks!
-
+      </p>
+      <div><img src="https://res.cloudinary.com/jbmtl75/image/upload/v1622078808/arc/Truck-Eating-Bridge_Above_View_onarmi.png" alt=""></div>
+      <p>
         We've mentioned why the truckers crash into the bridges, but you guys might be wondering "Well, they crash. So what?" Well, we'll tell you. It causes a TON of traffic. Like, a few hours of it. That would be annoying for the cars, who just wanted to drive without all this, it causes damage to the bridge, and that's obviously bad, and the trucker has to wait for his truck to get out.
 
         And lastly, how can we prevent this? By adding ideas to our website!

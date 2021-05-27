@@ -4,6 +4,8 @@
 
       <h2 class="2xl">Games</h2>
 
+      <JulesQuiz />
+
     </div>
   </div>
 
