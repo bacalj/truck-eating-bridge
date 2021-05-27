@@ -9,6 +9,11 @@
 
       <h2 class="2xl mt-4">About The Class:</h2>
       <p>The Class Of 5E and 5M CSSC Is Made Up Of 34 Students All Working Hard To Establish A Bridge That Will Let Trucks Go Under The T.E.B.</p>
+
+      <div>
+        <img src="https://res.cloudinary.com/jbmtl75/image/upload/v1622080962/arc/ryder_draw_gif_wg9yq6.gif" alt="">
+        <small>Original Animation by Ryder</small>
+      </div>
     </div>
   </div>
 
